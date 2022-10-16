@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffff95;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box1 {
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 5vw;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px gray;
+}
+.btn {
+  padding: 0.9rem 1.5rem;
+  margin: 0rem 1rem;
+  border-radius: 5px;
+  background-color: #1a43b3;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #10359c;
+}
+.box2 {
+  width: 70%;
+  height: 70vh;
+  background-color: white;
+  box-shadow: 0px 0px 3px gray;
+}
+.copy {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.8rem;
+}
+i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.para {
+  height: 62vh;
+  width: 100%;
+  padding: 0rem 0.8rem;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  overflow: auto;
+}
+#message {
+  display: flex;
+  justify-content: center;
+}
+.div {
+  width: 30%;
+  border-radius: 10px;
+  background-color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* utility class */
+.basicStyling {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 913px) {
+  .box2 {
+    width: 80vw;
+  }
+  .para {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  input {
+    width: 8vw;
+  }
+  .para {
+    height: 62vh;
+  }
+  .div {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .basicStyling {
+    font-size: 0.6rem;
+  }
+  .para {
+    font-size: 0.5rem;
+  }
+  i {
+    font-size: 0.8rem;
+  }
+  input {
+    width: 9vw;
+    padding: 0.3rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .div {
+    width: 50%;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+  }
+}

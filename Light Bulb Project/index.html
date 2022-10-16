@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Bulb</title>
+    <style>
+        body {
+            background-color: #333333;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        image {
+            height: auto;
+        }
+
+        #btn {
+            position: relative;
+            top: 5rem;
+            padding: 1rem 2.5rem;
+            font-size: 1.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid white;
+            background: transparent;
+            border-radius: 100vmax;
+            color: white;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: #7a7a76;
+            border: none;
+        }
+
+        @media screen and (max-width: 838px) {
+            .container {
+                flex-direction: column;
+            }
+
+            img {
+                width: 350px;
+            }
+
+            #btn {
+                top: 1rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img id="bulb" src="img/off.jpg" alt="bulb image" width="620px">
+        <button id="btn">Turn on</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

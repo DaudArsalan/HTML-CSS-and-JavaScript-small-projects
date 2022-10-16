@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Random Paragraph Generator</title>
+  </head>
+  <body>
+    <div id="message"></div>
+    <div class="container">
+      <div class="box1">
+        <div class="input">
+          <label class="basicStyling">Number of Paragraphs:</label>
+          <input class="basicStyling" type="number" id="input" />
+        </div>
+        <button id="generateBtn" class="btn basicStyling">Generate</button>
+      </div>
+      <div class="box2">
+        <div class="copy">
+          <strong class="basicStyling">RANDOM PARAGRAPH:</strong>
+          <i onclick="copyParagraph(this)" class="fa-solid fa-copy"></i>
+        </div>
+        <div class="para"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/1e07c8a7b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

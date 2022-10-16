@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <p id="success"></p>
+    <p id="error"></p>
+
+    <div class="main">
+      <div class="container">
+        <h2>Create Account</h2>
+
+        <form action="no-action/php" class="form">
+          <div>
+            <div class="input">
+              <i class="fa-solid fa-user"></i>
+              <input id="name" type="text" placeholder="Your Name" value="" />
+            </div>
+            <hr />
+            <small id="invalidName"></small>
+          </div>
+
+          <div>
+            <div class="input">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                id="email"
+                type="email"
+                placeholder="Your Email"
+                value=""
+              />
+            </div>
+            <hr />
+            <small id="invalidEmail"></small>
+          </div>
+
+          <div>
+            <div class="input">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                value=""
+              />
+              <div id="showPassword">
+                <i class="fa-solid fa-eye-slash" style="cursor: pointer"></i>
+              </div>
+            </div>
+            <hr />
+            <small id="invalidPassword"></small>
+          </div>
+
+          <div>
+            <div class="input">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                id="rePassword"
+                type="password"
+                placeholder="Repeat your Password"
+                value=""
+              />
+              <div id="showRePassword">
+                <i class="fa-solid fa-eye-slash" style="cursor: pointer"></i>
+              </div>
+            </div>
+            <hr />
+            <small id="invalidRePassword"></small>
+          </div>
+          
+          <div>
+            <div class="input">
+              <label class="container1"
+                >I agree all statments in <a href="#">Terms of service</a>
+                <input id="checkbox" type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <small id="invalidCheckbox"></small>
+          </div>
+
+          <button id="submit" class="btn">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1e07c8a7b4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

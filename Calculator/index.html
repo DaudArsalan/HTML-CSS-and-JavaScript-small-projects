@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/1e07c8a7b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="screen">
+          <div id="input-items"></div>
+        </div>
+        <div class="buttons">
+          <div class="first-line-btn">
+            <button class="btn" id="all-clear-btn">AC</button>
+            <button class="btn" id="clear-entry-btn">CE</button>
+            <button class="btn click-btn" data-val="/">
+              <i class="fa-solid fa-divide"></i>
+            </button>
+          </div>
+          <div class="second-line-btn">
+            <button class="btn click-btn" data-val="7">7</button>
+            <button class="btn click-btn" data-val="8">8</button>
+            <button class="btn click-btn" data-val="9">9</button>
+            <button class="btn click-btn" data-val="*">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="third-line-btn">
+            <button class="btn click-btn" data-val="4">4</button>
+            <button class="btn click-btn" data-val="5">5</button>
+            <button class="btn click-btn" data-val="6">6</button>
+            <button class="btn click-btn" data-val="-">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+          </div>
+          <div class="fourth-line-btn">
+            <button class="btn click-btn" data-val="1">1</button>
+            <button class="btn click-btn" data-val="2">2</button>
+            <button class="btn click-btn" data-val="3">3</button>
+            <button class="btn click-btn" data-val="+">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="fifth-line-btn">
+            <button class="btn click-btn" data-val=".">.</button>
+            <button class="btn click-btn" data-val="0">0</button>
+            <button class="btn" id="equal-btn">
+              <i class="fa-solid fa-equals"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

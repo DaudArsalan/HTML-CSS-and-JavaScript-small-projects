@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background: url("img/bg.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 30%;
+  height: 70vh;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.time {
+  display: flex;
+  font-size: 3rem;
+}
+.time p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.selectTime {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.selectTime select {
+  padding: 0.6rem;
+  margin: 0rem 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+}
+.btn {
+  width: 100%;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  background-color: #008eff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #007ee5;
+}
+.disable {
+  cursor: no-drop;
+}
+.disable select {
+  opacity: 0.6;
+  pointer-events: none;
+}
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 50%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 60%;
+    height: 60vh;
+  }
+  .time {
+    font-size: 2rem;
+  }
+  .selectTime select {
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 80%;
+    height: 50vh;
+  }
+  .time {
+    font-size: 2rem;
+  }
+  .selectTime select {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}

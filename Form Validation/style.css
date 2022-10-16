@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(bg.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  width: 30%;
+  height: 80vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 2rem;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  height: 100%;
+}
+
+small {
+  color: red;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1.06rem;
+  padding: 0.5rem 1rem 0.3rem 1rem;
+}
+.input {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.container1:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container1 input:checked ~ .checkmark {
+  background-color: #000;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+.container1 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btn {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border: none;
+  font-weight: 700;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.success {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.error {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 60%;
+    height: 45vh;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .container {
+    width: 50%;
+    height: 50vh;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  .form {
+    justify-content: space-evenly;
+    padding: 0rem;
+  }
+  hr {
+    margin-bottom: 1.5rem;
+  }
+  input {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem 0.4rem 1rem;
+  }
+  .input {
+    font-size: 0.9rem;
+  }
+  .btn {
+    margin: 1rem 0;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: lighter;
+  }
+  .container1 {
+    font-size: 0.8rem;
+  }
+  .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+  .container1 .checkmark:after {
+    left: 6px;
+    top: 1px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 60%;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .container {
+    width: 80%;
+    height: 80vh;
+  }
+}
