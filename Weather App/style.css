@@ -17,7 +17,7 @@ body {
 .container {
   background-color: white;
   width: 450px;
-  height: 550px;
+  height: auto;
   text-align: center;
   font-weight: 500;
 
@@ -56,8 +56,11 @@ body {
 #search-btn:hover {
   background-color: #1d8ac5;
 }
+.info {
+  padding: 1.2rem 0rem;
+}
 #city-name {
-  margin-top: 1.8rem;
+  margin-top: 1.5rem;
   font-size: 2.2rem;
 }
 .update {
