@@ -1,4 +1,4 @@
-let endDate = "31 December 2022 11:59:59 PM";
+let endDate = "31 December 2023 11:59:59 PM";
 let input = document.querySelectorAll("input");
 
 function countDown() {
